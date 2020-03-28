@@ -9,6 +9,7 @@ const app = express();
 // allow cross-origin requests
 app.use(cors())
 
+// connect to mongodb database
 mongoose.connect(
     'mongodb+srv://ammaradam:ammaradam123@cluster0-0dn41.mongodb.net/test?retryWrites=true&w=majority',
     {useNewUrlParser: true, useUnifiedTopology: true}
