@@ -18,6 +18,7 @@ mongoose.connection.once('open', () => {
     console.log('connected to database');
 });
 
+// use graphql as query language
 app.use('/graphql', graphqlHTTP({
     schema,                  // or schema.schema
     graphiql: true
